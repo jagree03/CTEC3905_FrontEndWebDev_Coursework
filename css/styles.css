@@ -32,11 +32,18 @@ nav {
 
 nav a {
   text-align: center;
-  background:rgb(255, 149, 131);
+  background-color:rgb(255, 149, 131);
   color: white;
   padding: 1em;
   text-shadow: 0px 2px 3px black;
   font-size: 1.2rem;
+
+  transition: background-color 0.5s, font-size 0.2s;
+}
+
+nav a:hover {
+  background-color:rgb(81, 49, 44);
+  font-size: 1.5rem;
 }
 
 a {
