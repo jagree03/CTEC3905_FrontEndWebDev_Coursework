@@ -3,6 +3,12 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+body {
+  margin: 0;
+  font-family: "SUSE", sans-serif;
+}
 
 /* TABLET STYLES */
 
