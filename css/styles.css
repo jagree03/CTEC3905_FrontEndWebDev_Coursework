@@ -68,9 +68,27 @@ a {
 .imagesOfFilms img {
   width: 85vw;
   height: auto;
+
+  transition: filter 0.5s ease-in-out;
 }
 
+.imagesOfFilms div p {
+  position: relative;
+  bottom: 50px;
+  font-size: 1.2rem;
+  opacity: 0;
+  text-shadow: 10px 10px 2px black;
+  
+  transition: opacity 0.4s;
+}
 
+.imagesOfFilms img:hover {
+  filter: brightness(0.7);
+}
+
+.imagesOfFilms img:hover + p {
+  opacity: 1;
+}
 
 
 hr {
