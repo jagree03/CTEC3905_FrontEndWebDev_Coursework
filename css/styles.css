@@ -52,6 +52,19 @@ a {
   color: rgb(255, 149, 131);
 }
 
+.imagesOfFilms {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+.imagesOfFilms img {
+  width: 85vw;
+  height: auto;
+}
+
 
 
 
