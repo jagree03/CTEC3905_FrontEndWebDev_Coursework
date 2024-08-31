@@ -6,20 +6,28 @@ const baseURL = `https://www.omdbapi.com/?apikey=${apiKey}&`
 
 
 // Functions
-function doSomething() {
+function testDoSomething() {
     console.log("Hello");
 }
 
-async function getFilm(searchQueryValue) {
-    const response = await fetch(`${baseURL}t=${searchQueryValue}`);
+async function loadSearch(searchQueryValue) {
+    const jsonResult = await getFilm(searchQueryValue);
+}
+
+async function getFilm(value) {
+    const response = await fetch(`${baseURL}t=${value}`);
     return response.json();
 } 
+
+function buildArticle(obj) {
+    
+}
 
 
 // Event Listeners
 query.addEventListener('change', function() {
     //console.log(query.value);
-    getFilm(query.value);
+    loadSearch(query.value);
 })
 
 
