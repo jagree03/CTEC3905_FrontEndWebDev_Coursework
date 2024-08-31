@@ -17,3 +17,5 @@ This is my front-end web development project, "Projector Palace" which is a onli
 ## references
 
 CSS Gradients used in the background of site (body): https://www.w3schools.com/css/css3_gradients.asp
+Text Shadow used in some text elements: https://www.w3schools.com/cssref/css3_pr_text-shadow.php
+SUSE Font Family from Google Fonts: https://fonts.googleapis.com/css2?family=SUSE:wght@100&display=swap
