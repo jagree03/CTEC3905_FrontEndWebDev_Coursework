@@ -117,6 +117,7 @@ section.enlargedAligned h3 {
 }
 
 section.enlargedAligned p {
+  text-align: left;
   padding: 0;
 }
 
