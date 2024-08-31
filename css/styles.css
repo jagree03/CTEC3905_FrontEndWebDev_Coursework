@@ -48,8 +48,14 @@ nav a:hover {
 
 p {
   text-align: center;
-  font-weight: 200;
+  font-weight: 300;
   padding: 0em 0.2em;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  font-size: 1.5rem;
 }
 
 a {
