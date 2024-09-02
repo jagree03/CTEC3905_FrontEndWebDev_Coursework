@@ -78,8 +78,8 @@ function returnListItem(value) {
 }
 
 function clearArticle() {
-    while (main.firstChild) { // While there exists a child element inside of the <main> element, this child element is an <article>
-        main.firstChild.remove(); // remove this <article>
+    if (main.firstChild) { // if <article> element exists inside of <main>
+        main.firstChild.remove(); // remove this <article> element, so it can be replaced by a new <article> representing the new search query input.
     }
 }
 
