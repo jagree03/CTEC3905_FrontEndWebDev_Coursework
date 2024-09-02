@@ -170,11 +170,15 @@ article div.purchase button {
   transition: background-color 0.4s, font-size 0.4s;
 }
 
+article div.purchase button:hover {
+  background-color: rgb(81, 49, 44);
+  font-size: 1.5rem;
+}
+
 article.film div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
 }
 
 article.film img {
@@ -183,9 +187,17 @@ article.film img {
   height: auto;
 }
 
-article div.purchase button:hover {
-  background-color: rgb(81, 49, 44);
-  font-size: 1.5rem;
+article.film ul {
+  padding-left: 2.2em;
+}
+
+article.film h2 {
+  margin: 0;
+  padding-left: 0.8em;
+}
+
+div.no-border {
+  border: none;
 }
 
 div#search {

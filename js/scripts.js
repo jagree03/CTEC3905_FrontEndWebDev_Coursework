@@ -32,23 +32,45 @@ function buildArticle(obj) {
     const article = document.createElement('article');
     article.classList.add("film");
     const div = document.createElement('div');
-    const img = document.createElement('img');
-    const h2 = document.createElement('h2');
-    const h3 = document.createElement('h3');
+    const poster = document.createElement('img');
+    const titleYear = document.createElement('h2');
+    const container = document.createElement('div');
+    container.classList.add("no-border");
+    const genres = document.createElement('h3');
+    const runtime = document.createElement('h3');
     const p = document.createElement('p');
+    const actorText = document.createElement('h2');
+    const actorList = document.createElement('ul');
+
+    let actorArray = (obj.Actors).split(', ');
+    actorArray = actorArray.map(returnListItem);
 
     article.append(div);
-    div.append(img, h2, h3, p);
+    container.append(genres, runtime);
 
-    img.src = obj.Poster;
-    img.alt = `Poster of the movie ${obj.Title} released in ${obj.Year}`;
-    h2.textContent = `${obj.Title} (${obj.Year})`;
-    h3.textContent = `Genres: ${obj.Genre}`;
+    for (const a of actorArray) {
+        actorList.append(a);
+    }
+
+    div.append(poster, titleYear, container, p, actorText, actorList);
+
+    poster.src = obj.Poster;
+    poster.alt = `Poster of the movie ${obj.Title} released in ${obj.Year}`;
+    titleYear.textContent = `${obj.Title} (${obj.Year})`;
+    genres.textContent = `Genres: ${obj.Genre}`;
+    runtime.textContent = `Runtime: ${obj.Runtime}`;
     p.textContent = obj.Plot;
+    actorText.textContent = "Actors";
+
 
     return article;
 }
 
+function returnListItem(value) {
+    const li = document.createElement('li');
+    li.textContent = value;
+    return li;
+}
 
 // Event Listeners
 query.addEventListener('change', function() {
