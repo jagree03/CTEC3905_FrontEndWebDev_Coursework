@@ -170,6 +170,18 @@ article div.purchase button {
   transition: background-color 0.4s, font-size 0.4s;
 }
 
+article.film div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article.film img {
+  align-self: center;
+  width: 75%;
+  height: auto;
+}
 
 article div.purchase button:hover {
   background-color: rgb(81, 49, 44);

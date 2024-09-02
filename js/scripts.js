@@ -30,6 +30,7 @@ function loadPage(obj) {
 function buildArticle(obj) {
 
     const article = document.createElement('article');
+    article.classList.add("film");
     const div = document.createElement('div');
     const img = document.createElement('img');
     const h2 = document.createElement('h2');
