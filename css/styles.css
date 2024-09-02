@@ -331,6 +331,12 @@ input[type="email"]:valid {
     border-radius: 1em;
   }
 
+  #subscriptionsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 2em;
+  }
+
   article.film img {
     width: 30vw;
     height: auto;
