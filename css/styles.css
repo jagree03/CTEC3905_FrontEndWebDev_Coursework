@@ -175,6 +175,16 @@ article div.purchase button:hover {
   font-size: 1.5rem;
 }
 
+article.film {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  40% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 article.film div {
   display: flex;
   flex-direction: column;
