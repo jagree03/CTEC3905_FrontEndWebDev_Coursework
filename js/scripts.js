@@ -31,6 +31,9 @@ function loadPage(obj) {
 
 function buildArticle(obj) {
 
+    // Building the key elements to represent main details of film
+    // main details include: Poster Image, Title, Year of Release, Genres, Runtime, Rated Level, Plot Description
+
     const article = document.createElement('article');
     article.classList.add("film");
     const div = document.createElement('div');
@@ -42,21 +45,10 @@ function buildArticle(obj) {
     const genres = document.createElement('h3');
     const runtime = document.createElement('h3');
     const p = document.createElement('p');
-    const actorText = document.createElement('h2');
-    actorText.classList.add("actorText");
-    const actorList = document.createElement('ul');
-
-    let actorArray = (obj.Actors).split(', ');
-    actorArray = actorArray.map(returnListItem);
 
     article.append(div);
     container.append(genres, runtime, rated);
-
-    for (const a of actorArray) {
-        actorList.append(a);
-    }
-
-    div.append(poster, titleYear, container, p, actorText, actorList);
+    div.append(poster, titleYear, container, p);
 
     poster.src = obj.Poster;
     poster.alt = `Poster of the movie ${obj.Title} released in ${obj.Year}`;
@@ -65,10 +57,58 @@ function buildArticle(obj) {
     runtime.textContent = `Runtime: ${obj.Runtime}`;
     rated.textContent = `Rated: ${obj.Rated}`;
     p.textContent = obj.Plot;
-    actorText.textContent = "Actors";
 
+    // Actors Section
+    buildActorsSection(div, obj.Actors);
+
+    // Ratings Section
+    buildRatingsSection(div, obj.Ratings);
 
     return article;
+}
+
+function buildActorsSection(div, actorData) {
+    const actorText = document.createElement('h2');
+    const actorList = document.createElement('ul');
+    
+    actorText.classList.add("sectionHeading");
+    actorText.textContent = "Actors";
+    
+    let actorArray = (actorData).split(', ');
+    actorArray = actorArray.map(returnListItem);
+
+    for (const a of actorArray) {
+        actorList.append(a);
+    }
+
+    div.append(actorText, actorList);
+}
+
+function buildRatingsSection(div, ratingsData) {
+    const ratingsText = document.createElement('h2');
+    const ratingsList = document.createElement('ul');
+
+    ratingsList.style.listStyle = "none";
+    ratingsList.style.textAlign = "center";
+
+    ratingsText.classList.add("sectionHeading");
+    ratingsText.textContent = "Ratings";
+
+    // console.log(ratingsData);
+    // console.log(ratingsData.map(rating => `${rating.Source} - ${rating.Value}`).map(returnListItem));
+
+    ratingsData = ratingsData.map(rating => `${rating.Source} - ${rating.Value}`).map(returnListItem);
+    ratingsData.forEach(element => {
+        ratingsList.append(element);
+    });
+
+    div.append(ratingsText, ratingsList);
+
+    // for (const rating of ratingsData) {
+    //     const item = `${rating.Source}` - `${rating.Value}`;
+    //     divreturnListItem(item);
+    // }
+
 }
 
 function returnListItem(value) {
