@@ -36,23 +36,29 @@ function buildArticle(obj) {
 
     const article = document.createElement('article');
     article.classList.add("film");
-    const div = document.createElement('div');
+    const div = document.createElement('div'); // serves as the main div container holding all the elements inside the <article>
+
     const poster = document.createElement('img');
     const titleYear = document.createElement('h2');
+
     const container = document.createElement('div');
     container.classList.add("no-border");
-    const rated = document.createElement('h3');
+
+    const director = document.createElement('h3');
     const genres = document.createElement('h3');
     const runtime = document.createElement('h3');
+    const rated = document.createElement('h3');
+
     const p = document.createElement('p');
 
     article.append(div);
-    container.append(genres, runtime, rated);
+    container.append(director, genres, runtime, rated);
     div.append(poster, titleYear, container, p);
 
     poster.src = obj.Poster;
     poster.alt = `Poster of the movie ${obj.Title} released in ${obj.Year}`;
     titleYear.textContent = `${obj.Title} (${obj.Year})`;
+    director.textContent = `Director: ${obj.Director}`;
     genres.textContent = `Genres: ${obj.Genre}`;
     runtime.textContent = `Runtime: ${obj.Runtime}`;
     rated.textContent = `Rated: ${obj.Rated}`;
