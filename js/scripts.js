@@ -36,6 +36,7 @@ function buildArticle(obj) {
     const titleYear = document.createElement('h2');
     const container = document.createElement('div');
     container.classList.add("no-border");
+    const rated = document.createElement('h3');
     const genres = document.createElement('h3');
     const runtime = document.createElement('h3');
     const p = document.createElement('p');
@@ -47,7 +48,7 @@ function buildArticle(obj) {
     actorArray = actorArray.map(returnListItem);
 
     article.append(div);
-    container.append(genres, runtime);
+    container.append(genres, runtime, rated);
 
     for (const a of actorArray) {
         actorList.append(a);
@@ -60,6 +61,7 @@ function buildArticle(obj) {
     titleYear.textContent = `${obj.Title} (${obj.Year})`;
     genres.textContent = `Genres: ${obj.Genre}`;
     runtime.textContent = `Runtime: ${obj.Runtime}`;
+    rated.textContent = `Rated: ${obj.Rated}`;
     p.textContent = obj.Plot;
     actorText.textContent = "Actors";
 
