@@ -178,7 +178,11 @@ article div.purchase button:hover {
 article.film div {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  align-items: center;
+}
+
+article.film div p, li {
+  font-size: 1.2rem;
 }
 
 article.film img {
@@ -188,12 +192,12 @@ article.film img {
 }
 
 article.film ul {
-  padding-left: 2.2em;
+  list-style: none;
+  padding-left: 1em;
 }
 
-article.film h2 {
+article.film h2.actorText {
   margin: 0;
-  padding-left: 0.8em;
 }
 
 div.no-border {

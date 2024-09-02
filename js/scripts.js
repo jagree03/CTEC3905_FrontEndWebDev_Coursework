@@ -40,6 +40,7 @@ function buildArticle(obj) {
     const runtime = document.createElement('h3');
     const p = document.createElement('p');
     const actorText = document.createElement('h2');
+    actorText.classList.add("actorText");
     const actorList = document.createElement('ul');
 
     let actorArray = (obj.Actors).split(', ');
