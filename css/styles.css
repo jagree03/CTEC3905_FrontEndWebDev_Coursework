@@ -5,6 +5,7 @@
 
 :root {
   --mainColor: rgb(255, 149, 131);
+  --hoverColor: rgb(81, 49, 44);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
@@ -232,19 +233,33 @@ input#query, label {
 }
 
 p.feedbackHelp {
-  font-size: 2em;
+  font-size: 1.3em;
+  padding:  1em;
 }
 
 #feedbackForm {
   display: grid;
   grid-template-columns: auto;
-  padding: 0 0.6em;
-  gap: 0.5em;
+  padding: 1em 0.6em;
+  gap: 1em;
   margin: 0;
+}
+
+#feedbackForm label {
+  font-size: 1.4rem;
 }
 
 input#myFeedback {
   size: 100;
+}
+
+input[type="text"], input[type="email"] {
+  width: 90vw;
+  height: 10vh;
+}
+
+input[type="text"], input[type="text"]::placeholder, input[type="email"], input[type="email"]::placeholder {
+  font-size: 1.6rem;
 }
 
 input[type="submit"] {
@@ -254,6 +269,20 @@ input[type="submit"] {
   font-size: 1.2rem;
   text-shadow: 0px 2px 3px black;
   padding: 1em;
+
+  transition: background-color 0.4s, font-size 0.4s;
+}
+
+textarea, textarea::placeholder {
+  width: 90.2vw;
+  height: 20vh;
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+
+input[type="submit"]:hover {
+  background-color:  var(--hoverColor);
+  font-size: 1.5rem;
 }
 
 input[type="text"]:invalid {
