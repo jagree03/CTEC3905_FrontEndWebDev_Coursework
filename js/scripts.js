@@ -23,6 +23,7 @@ async function getFilm(value) {
 } 
 
 function loadPage(obj) {
+    clearArticle();
     const article = buildArticle(obj);
     main.append(article);
 }
@@ -73,6 +74,12 @@ function returnListItem(value) {
     const li = document.createElement('li');
     li.textContent = value;
     return li;
+}
+
+function clearArticle() {
+    while (main.firstChild) { // While there exists a child element inside of the <main> element, this child element is an <article>
+        main.firstChild.remove(); // remove this <article>
+    }
 }
 
 // Event Listeners
