@@ -3,6 +3,10 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
+:root {
+  --mainColor: rgb(255, 149, 131);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 body {
@@ -244,10 +248,12 @@ input#myFeedback {
 }
 
 input[type="submit"] {
-  background-color: rgb(4, 124, 252);
+  background-color:  var(--mainColor);
   color: inherit;
   font-family: inherit;
-  margin: 2em 0;
+  font-size: 1.2rem;
+  text-shadow: 0px 2px 3px black;
+  padding: 1em;
 }
 
 input[type="text"]:invalid {
