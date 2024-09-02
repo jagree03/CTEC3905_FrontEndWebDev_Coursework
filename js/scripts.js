@@ -103,12 +103,6 @@ function buildRatingsSection(div, ratingsData) {
     });
 
     div.append(ratingsText, ratingsList);
-
-    // for (const rating of ratingsData) {
-    //     const item = `${rating.Source}` - `${rating.Value}`;
-    //     divreturnListItem(item);
-    // }
-
 }
 
 function returnListItem(value) {
