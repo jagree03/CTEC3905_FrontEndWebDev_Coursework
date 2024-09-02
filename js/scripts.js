@@ -2,6 +2,7 @@
 const apiKey = "d18a9887"
 const baseURL = `https://www.omdbapi.com/?apikey=${apiKey}&`
 
+const query = document.getElementById('query');
 const main = document.querySelector('main');
 
 // Mutable Let Variables
