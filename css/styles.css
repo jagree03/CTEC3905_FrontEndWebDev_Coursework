@@ -227,6 +227,46 @@ input#query, label {
   font-size: 1.2rem;
 }
 
+p.feedbackHelp {
+  font-size: 2em;
+}
+
+#feedbackForm {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0 0.6em;
+  gap: 0.5em;
+  margin: 0;
+}
+
+input#myFeedback {
+  size: 100;
+}
+
+input[type="submit"] {
+  background-color: rgb(4, 124, 252);
+  color: inherit;
+  font-family: inherit;
+  margin: 2em 0;
+}
+
+input[type="text"]:invalid {
+  background-color: rgb(255, 152, 152);
+}
+
+input[type="text"]:valid {
+  background-color: rgb(149, 255, 152);
+}
+
+input[type="email"]:invalid {
+  background-color: rgb(255, 152, 152);
+}
+
+input[type="email"]:valid {
+  background-color: rgb(149, 255, 152);
+}
+
+
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
