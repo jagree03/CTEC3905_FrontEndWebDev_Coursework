@@ -139,7 +139,6 @@ article {
 article div {
   border: 3px solid rgb(145, 64, 64);
   border-radius: 0.8em;
-  padding: 0.3em;
 }
 
 article div.purchase {
@@ -311,8 +310,12 @@ input[type="email"]:valid {
   footer p {
     font-size: 0.8rem;
   }
-
   
+  .imagesOfFilms img {
+    width: 95vw;
+    height: auto;
+  }
+
 }
 
 
