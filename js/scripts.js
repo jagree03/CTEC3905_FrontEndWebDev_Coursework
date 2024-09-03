@@ -132,6 +132,7 @@ function clearArticle() {
 if (menuToggler) {
     menuToggler.addEventListener('click', function() {
         menu.classList.toggle("open");
+        menuToggler.classList.toggle("open");
     })
 }
 
