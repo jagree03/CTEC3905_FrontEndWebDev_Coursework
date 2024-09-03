@@ -308,7 +308,9 @@ input[type="email"]:valid {
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-
+  footer p {
+    font-size: 0.8rem;
+  }
 
   
 }
