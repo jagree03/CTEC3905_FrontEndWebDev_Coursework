@@ -266,8 +266,6 @@ input#query, label {
   line-height: 1.6em;
 }
 
-
-
 p.feedbackHelp {
   font-size: 1.3em;
   padding:  1em;
@@ -352,7 +350,6 @@ input[type="email"]:valid {
     width: 95vw;
     height: auto;
   }
-
   
   #subscriptionContainer img {
     display: block; /* set image to purely a block element so margin can center the element*/
@@ -366,7 +363,10 @@ input[type="email"]:valid {
     border-radius: 1em; /* add border radius for smoothening of edges so it can fit with the curved edges of the div's border */
   }
   
-
+  article.film img {
+    width: 50vw;
+    height: auto;
+  }
 }
 
 
