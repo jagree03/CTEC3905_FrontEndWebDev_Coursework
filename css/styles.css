@@ -29,10 +29,25 @@ header h2 {
   text-align: center;
 }
 
+#menuToggler {
+  position: fixed;
+  top: 110px;
+  left: 0;
+  z-index: 1;
+
+  margin-left: 0.2em;
+  font-size: 4em;
+}
+
 nav {
   display: flex;
   flex-direction: column;
   gap: 0.2em;
+}
+
+nav.open {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 nav a {
@@ -328,6 +343,10 @@ input[type="email"]:valid {
   nav {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  #menuToggler {
+    display: none;
   }
 
   nav a {

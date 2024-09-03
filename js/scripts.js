@@ -5,6 +5,9 @@ const baseURL = `https://www.omdbapi.com/?apikey=${apiKey}&`
 const query = document.getElementById('query');
 const main = document.querySelector('main');
 
+const menu = document.getElementById('menu');
+const menuToggler = document.getElementById('menuToggler');
+
 // Mutable Let Variables
 
 
@@ -124,8 +127,17 @@ function clearArticle() {
 }
 
 // Event Listeners
-query.addEventListener('change', function() {
-    //console.log(query.value);
-    loadSearch(query.value);
-})
+if (menuToggler) {
+    menuToggler.addEventListener('click', function() {
+        menu.classList.toggle("open");
+    })
+}
+
+if (query) {
+    query.addEventListener('change', function() {
+        //console.log(query.value);
+        loadSearch(query.value);
+    })
+}
+
 
