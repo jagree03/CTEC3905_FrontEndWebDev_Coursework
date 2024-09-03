@@ -263,7 +263,10 @@ div#search {
 input#query, label {
   height: 30px;
   font-size: 1.2rem;
+  line-height: 1.6em;
 }
+
+
 
 p.feedbackHelp {
   font-size: 1.3em;
@@ -350,6 +353,20 @@ input[type="email"]:valid {
     height: auto;
   }
 
+  
+  #subscriptionContainer img {
+    display: block; /* set image to purely a block element so margin can center the element*/
+    /* usually, image elements are "inline block" elements. This means that they flow inline like text, but also have a width and height like block elements.*/
+    
+    margin: auto; /*for top, bottom, left, right margin - it's going to be the same equal value thus its centers the image */
+    
+    width: 60vw; /* reduce size of image width, letting the height to be automatically calculated to keep the same aspect ratio */
+    height: auto;
+
+    border-radius: 1em; /* add border radius for smoothening of edges so it can fit with the curved edges of the div's border */
+  }
+  
+
 }
 
 
@@ -401,6 +418,17 @@ input[type="email"]:valid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 2em;
+  }
+
+  #subscriptionContainer img {
+    display: inline-block; /* set image to back to inline-block */
+    /* usually, image elements are "inline block" elements. This means that they flow inline like text, but also have a width and height like block elements.*/
+    
+    margin: 0; /*for top, bottom, left, right margin - it's going to be no margin. */
+    
+    width: 100%;   /* completely fit the image inside the container, take 100% of the available space. */
+
+    /*height and border-radius are inherited from the tablet media query.*/
   }
   
   article.film img {
