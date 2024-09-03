@@ -358,9 +358,14 @@ input[type="email"]:valid {
 @media screen and (min-width: 1000px) {
 
   /* applies to screens wider than 999px */
+
   nav {
     flex-direction: row;
-    justify-content: space-evenly;
+    transform: none;
+    opacity: 1;
+    position: static;
+    height: auto;
+    gap: 2em;
   }
 
   #menuToggler {
@@ -368,9 +373,10 @@ input[type="email"]:valid {
   }
 
   nav a {
+    text-align: center;
     font-size: 1rem;
-    padding: 0.8em 6em;
     border-radius: 1em;
+    padding: 1em 0em;
   }
 
   .imagesOfFilms img {
