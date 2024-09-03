@@ -341,4 +341,34 @@ input[type="email"]:valid {
     width: 30vw;
     height: auto;
   }
+
+  #feedbackForm label {
+    line-height: 3.5em;
+    font-size: 1rem;
+  }
+  
+  input#myFeedback {
+    size: 100;
+  }
+  
+  input[type="text"], input[type="email"] {
+    width: 70vw;
+    height: 5vh;
+  }
+  
+  input[type="text"], input[type="text"]::placeholder, input[type="email"], input[type="email"]::placeholder {
+    font-size: 1.0rem;
+  }
+
+  textarea, textarea::placeholder {
+    width: 70vw;
+    height: 10vh;
+    font-size: 1rem;
+  }
+
+  #feedbackForm {
+    padding: 0em 0.4em;
+    gap: 0.5em;
+
+  }
 }
