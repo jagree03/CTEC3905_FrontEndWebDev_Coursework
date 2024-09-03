@@ -43,6 +43,7 @@ function buildArticle(obj) {
 
     const poster = document.createElement('img');
     const titleYear = document.createElement('h2');
+    const p = document.createElement('p');
 
     const container = document.createElement('div');
     container.classList.add("no-border");
@@ -52,11 +53,12 @@ function buildArticle(obj) {
     const runtime = document.createElement('h3');
     const rated = document.createElement('h3');
 
-    const p = document.createElement('p');
+    
 
     article.append(div);
+    div.append(poster, titleYear, p, container);
     container.append(director, genres, runtime, rated);
-    div.append(poster, titleYear, container, p);
+   
 
     poster.src = obj.Poster;
     poster.alt = `Poster of the movie ${obj.Title} released in ${obj.Year}`;
