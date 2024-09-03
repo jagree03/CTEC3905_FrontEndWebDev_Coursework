@@ -31,9 +31,9 @@ header h2 {
 
 #menuToggler {
   position: fixed;
-  top: 116px;
+  top: 50px;
   left: 0;
-  z-index: 2;
+  z-index: 1;
 
   margin-left: 0.2em;
   font-size: 4em;
@@ -41,15 +41,24 @@ header h2 {
   transition: transform 0.5s;
 }
 
+#menuToggler.open {
+  transform: rotate(90deg) scaleY(0.4);
+}
+
 nav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+
   display: flex;
   flex-direction: column;
   gap: 0.2em;
+
   opacity: 0;
-  transform: translateX(-100vw);
-  transition: transform 0.5s, opacity 2s;
-  
-  z-index: 1;
+  transition: 0.5s;
+    
+  transform: translateX(100vw);
 }
 
 nav.open {
@@ -57,18 +66,16 @@ nav.open {
   transform: translateX(0);
 }
 
-#menuToggler.open {
-  transform: rotate(90deg) scaleY(0.4);
-}
-
 nav a {
-  text-align: center;
-  background-color: var(--mainColor);
-  color: white;
-  padding: 1em;
-  text-shadow: 0px 2px 3px black;
-  font-size: 1.2rem;
-  transition: background-color 0.5s, font-size 0.2s;
+  font-size: 2em;
+  text-shadow: 0px 1px 3px black;
+  padding: 1.5em;
+  text-decoration: none;
+  background-color: rgba(255, 149, 131, 0.85);
+  color: rgb(255, 255, 255);
+  flex-grow: 1;
+
+  transition: 0.5s;
 }
 
 nav a:hover {
