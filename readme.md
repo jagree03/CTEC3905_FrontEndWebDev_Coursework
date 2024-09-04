@@ -12,7 +12,7 @@ The `js/scripts.js` file contains JavaScript code to operate the mobile menu and
 
 ## Project Description
 
-This is my front-end web development project, "Projector Palace" which is a online streaming hub that provides services to users allowing them to watch movies. It is designed as a mobile device suited website. The Home page describes the qualities of the service and highlights any reasons as to why you should choose "Projector Palace" for your entertainment needs. The Purchase page shows a list of subscriptions on offer to access the streaming hub, a Film Search page connected to The Open Movie Database that can dynamically find and show the details of any movie or TV Show that's within the database and a Contact page for the user to provide feedback into a form.
+This is my front-end web development project, "Projector Palace," an online streaming hub that allows users to watch movies. The website is designed to be mobile-friendly. The Home page outlines the features of the service and highlights reasons to choose "Projector Palace" for your entertainment needs. The Purchase page presents a list of subscription options for accessing the streaming hub. Additionally, there is a Film Search page connected to The Open Movie Database, which dynamically retrieves and displays details of any movie or TV show within the database. Finally, the Contact page allows users to provide feedback through a form.
 
 ## References
 
