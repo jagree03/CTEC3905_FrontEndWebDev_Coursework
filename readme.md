@@ -20,3 +20,7 @@ This is my front-end web development project, "Projector Palace" which is a onli
 - [CSS Gradients used in the background of site (body element) - W3Schools](https://www.w3schools.com/css/css3_gradients.asp)
 - [Text Shadow used in some text elements - W3Schools](https://www.w3schools.com/cssref/css3_pr_text-shadow.php)
 - [SUSE Font Family - Google Fonts](https://fonts.googleapis.com/css2?family=SUSE:wght@100&display=swap)
+- [Stock Footage #1 used for Projector Palace Free Trial GIF by cinemitch on Vecteezy](https://www.vecteezy.com/video/1616321-front-view-clip-of-a-person-turning-on-a-movie-projector-with-reels-and-mechanism-moving-the-film-in-4k)
+- [Stock Footage #2 used for Projector Palace Basic Subscription GIF by johnstocker on Vecteezy](https://www.vecteezy.com/video/1790424-projector-light-spotlight-abstract-background)
+- [Stock Footage #3 used for Projector Palace Premium Subscription GIF by kotliarnata236275 on Vecteezy](https://www.vecteezy.com/video/35290432-the-four-fellow-are-sitting-at-the-premiere-of-the-film-at-the-cinema)
+- [Ezgif.com for GIF creation](https://ezgif.com/)
